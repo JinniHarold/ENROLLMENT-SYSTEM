@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ENROLLMENT_SYSTEM.Models.Entities;
 
 namespace ENROLLMENT_SYSTEM.Data
 {
@@ -8,5 +9,7 @@ namespace ENROLLMENT_SYSTEM.Data
         {
             
         }
+
+        public DbSet<Students> StudentEntry { get; set; }
     }
 }
