@@ -1,12 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace ENROLLMENT_SYSTEM.Models.Entities
+﻿namespace ENROLLMENT_SYSTEM.Models
 {
-    public class Students
+    public class AddStudentViewModel
     {
-        [Key]
-        public int StudID { get; set; }
-
         public string StudLastName { get; set; }
         public string StudFirstName { get; set; }
         public string StudMidName { get; set; }

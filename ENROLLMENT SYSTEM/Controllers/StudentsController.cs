@@ -8,5 +8,10 @@ namespace ENROLLMENT_SYSTEM.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult Add()
+        {
+
+        }
     }
 }
