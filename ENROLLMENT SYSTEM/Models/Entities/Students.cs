@@ -13,7 +13,6 @@ namespace ENROLLMENT_SYSTEM.Models.Entities
         public string StudCourse { get; set; }
         public int StudYear { get; set; }
         public string Studremarks { get; set; }
-        public string StudStatus { get; set; }
 
     }
 }
