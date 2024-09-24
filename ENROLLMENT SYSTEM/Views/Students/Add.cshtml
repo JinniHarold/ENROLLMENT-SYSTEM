@@ -4,29 +4,31 @@
 @{
 }
 
+@model ENROLLMENT_SYSTEM.Models.AddStudentViewModel
+
 <div class="text-center">
     <h1 class="display-4">Welcome University of Cebu</h1>
     <h1 class="display-4">Student Entry</h1>
 
     <div class="d-grid gap-2 d-md-block">
         @*ID Number TextBox*@
-        <div class="form-floating mb-sm-5">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        @* <div class="form-floating mb-sm-5">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" >
             <label for="floatingInput">ID Number:</label>
-        </div>
+        </div> *@
         @*First Name TextBox*@
         <div class="form-floating mb-sm-3">
-            <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="text" class="form-control"  asp-for="StudFirstName">
             <label for="floatingPassword">First Name:</label>
         </div>
         @*Middle Name TextBox*@
         <div class="form-floating mb-sm-3">
-            <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="text" class="form-control" asp-for="StudMidName">
             <label for="floatingPassword">Middle Name:</label>
         </div>
         @*Last Name TextBox*@
         <div class="form-floating mb-sm-3">
-            <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="text" class="form-control" asp-for="StudLastName">
             <label for="floatingPassword">Last Name:</label>
         </div>
         @*Course Label and Drop Down*@
@@ -34,14 +36,15 @@
             <label class="input-group-text" for="inputGroupSelect01">Course</label>
             <select class="form-select" id="inputGroupSelect01">
                 <option selected>Choose...</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option value="1">BSIT</option>
+                <option value="2">BSIS</option>
+                <option value="3">ACT</option>
             </select>
+            <input type="text" class="form-control" asp-for="StudCourse">
         </div>
         @*Year TextBox*@
         <div class="form-floating mb-sm-3">
-            <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="text" class="form-control" asp-for="StudYear">
             <label for="floatingPassword">Year:</label>
         </div>
         @*Remarks Label and Drop Down*@
@@ -53,6 +56,7 @@
                 <option value="2">Two</option>
                 <option value="3">Three</option>
             </select>
+            <input type="text" class="form-control" asp-for="StudCourse">
         </div>
         <input class="btn btn-primary" type="submit" value="Save">
         <input class="btn btn-primary" type="submit" value="Clear">
