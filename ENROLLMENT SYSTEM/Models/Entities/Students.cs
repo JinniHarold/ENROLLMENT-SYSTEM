@@ -4,8 +4,8 @@ namespace ENROLLMENT_SYSTEM.Models.Entities
 {
     public class Students
     {
-        [Key]
-        public int StudID { get; set; }
+        
+        public Guid StudID { get; set; }
 
         public string StudLastName { get; set; }
         public string StudFirstName { get; set; }
